@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+    <script>
+    function facto(){
+        var str=document.getElementById("num").value;
+        var f=1;
+        var num=parseInt(str);
+        for(i=num;i>0;i--){
+            f=f*i;
+        }
+        document.getElementById("result").innerHTML="the factorial of"+num+"is"+f;
+    }
+</script>
+</head>
+<body>
+ Enter the number<input type="text" name="" id="num">
+ <input type="button" value="Find Factorial" onclick="facto()">
+<p id="result"></p>   
+</body>
+</html>
